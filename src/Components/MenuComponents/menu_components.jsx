@@ -19,7 +19,7 @@ const MenuComponents = () => {
           <div className="card-footer"> <h6>Yarışma Hakkında</h6></div>
         </div>
 
-        <div className="card">
+        <div className="card" onClick={() => handleClick('duzenleme-kurulu')}>
           <div className="card-body">
             <i class="fa-solid fa-file"></i>
           </div>
