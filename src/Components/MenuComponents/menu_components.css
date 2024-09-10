@@ -1,0 +1,144 @@
+.card_container i{
+  font-size: 5rem
+}
+
+.card-body {
+  background: linear-gradient(to top right, #ff6f61, #ffb74d);
+  border-start-start-radius: 1rem;
+  border-start-end-radius: 1rem;
+}
+
+.card-body i {
+  color: #fff
+}
+
+.card-footer h6 {
+  font-size: 1rem;
+}
+
+.card {
+  border-radius: 1rem;
+  margin: 1rem;
+  min-width: 11rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.card:hover{
+  border-end-start-radius: 2rem;
+  border-end-end-radius: 2rem;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+  margin: 1rem;
+  min-width: 11rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card_container {  
+  display: ruby;
+}
+
+@media(max-width: 1400px){
+  .card {
+    border-radius: 1rem;
+    margin: .8rem;
+    min-width: 10rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    border-end-start-radius: 2rem;
+    border-end-end-radius: 2rem;
+    margin: 1rem;
+    min-width: 9rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .card_container i{
+    font-size: 4rem
+  }
+
+  .card-footer h6 {
+    font-size: .9rem;
+    padding: 0;
+    margin:0;
+  }
+}
+
+@media(max-width: 720px){
+  .card {
+    border-radius: 1rem;
+    margin: .5rem;
+    min-width: 9rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    border-end-start-radius: 2rem;
+    border-end-end-radius: 2rem;
+    margin: 1rem;
+    min-width: 7rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .card_container i{
+    font-size: 2.8rem
+  }
+
+  .card-footer h6 {
+    font-size: .7rem;
+    padding: 0;
+    margin:0;
+  }
+}
+
+@media (min-width: 390px) and (max-width: 404px) {
+  .card {
+    border-radius: 1rem;
+    margin: .3rem;
+    min-width: 8.8rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+
+  .card_container i{
+    font-size: 2.8rem
+  }
+
+  .card-footer h6 {
+    font-size: .7rem;
+    padding: 0;
+    margin:0;
+  }
+}
+
+@media(max-width: 390px){
+  .card {
+    border-radius: 1rem;
+    margin: .3rem;
+    min-width: 6rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+
+  .card:hover {
+    border-end-start-radius: 2rem;
+    border-end-end-radius: 2rem;
+    margin: .3rem;
+    min-width: 6rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .card_container i{
+    font-size: 2rem
+  }
+
+  .card-footer h6 {
+    font-size: .5rem;
+    padding: 0;
+    margin:0;
+  }
+}
+

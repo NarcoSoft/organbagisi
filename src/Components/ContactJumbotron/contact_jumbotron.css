@@ -1,0 +1,71 @@
+.contact_jumbotron { 
+  display: flex;
+  position: relative;
+  color: white;
+  padding: 2rem;
+  height: 36.5rem;
+  background: url('https://live.staticflickr.com/65535/53980014595_dd91de86cb_k.jpg') no-repeat center center;
+  background-size: cover;
+  align-items: center;  
+  justify-content: center;
+}
+
+@media(max-width: 500px){
+  .contact_jumbotron {
+    position: relative;
+    color: white;
+    padding: 2rem;
+    height: 30rem;
+    background: url('https://live.staticflickr.com/65535/53980014595_dd91de86cb_k.jpg') no-repeat center center;
+    background-size: cover;
+  }
+}
+
+
+@media(max-width: 768px){
+  .contact_jumbotron {
+    position: relative;
+    color: white;
+    padding: 2rem;
+    height: 48rem;
+    background: url('https://live.staticflickr.com/65535/53980014595_dd91de86cb_k.jpg') no-repeat center center;
+    background-size: cover;
+  }
+}
+
+.contact_jumbotron::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.6); /* Arka plan resmi için opaklık ayarı */
+  z-index: 1;
+}
+
+.contact_jumbotron .contact_content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(0px);
+  animation: fadeIn 3s forwards; 
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+} 
+
+.custom-heading {
+  font-weight: 800;
+}
+
+.app_date {
+  font-style: italic;
+  color: #fff
+}
