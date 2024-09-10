@@ -38,6 +38,7 @@
   display: ruby;
 }
 
+<<<<<<< HEAD
 @media(max-width: 1400px){
   .card {
     border-radius: 1rem;
@@ -66,6 +67,8 @@
   }
 }
 
+=======
+>>>>>>> c83c54f (Commit mesajınız)
 @media(max-width: 720px){
   .card {
     border-radius: 1rem;

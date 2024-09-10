@@ -16,7 +16,7 @@ const MenuComponents = () => {
           <div className="card-body">
             <i class="fa-solid fa-circle-info"></i>
           </div>
-          <div className="card-footer"> <h6>Yarışma Hakkında</h6></div>
+          <div className="card-footer"> <h6>Yaarışma Hakkında</h6></div>
         </div>
 
         <div className="card">
@@ -33,7 +33,7 @@ const MenuComponents = () => {
           <div className="card-footer"> <h6>Başvuru Şartları</h6></div>
         </div>
 
-        <a className="card"  onClick={() => handleClick('basvuru-formu')} style={{textDecoration: 'none'}}>
+        <a className="card" href='https://forms.gle/GjQjTBpPxGFkQ89y9' style={{textDecoration: 'none'}}>
           <div className="card-body">
             <i class="fa-solid fa-file-lines"></i>
           </div>

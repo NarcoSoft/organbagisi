@@ -11,7 +11,10 @@ import BasvuruFormu from './Pages/BasvuruFormu/basvuru_formu';
 import BasvuruSonuclari from './Pages/BasvuruSonuclari/basvuru_sonuclari'
 import Oduller from './Pages/Oduller/oduller';
 import Contact from './Pages/Contact/contact';
+<<<<<<< HEAD
 import DuzenlemeKurulu from './Pages/DuzenlemeKurulu/duzenleme_kurulu';
+=======
+>>>>>>> c83c54f (Commit mesajınız)
 
 export default function App() {
   return (
@@ -22,9 +25,13 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="/yarisma-hakkinda" element={<YarismaHakkinda/>} />
+<<<<<<< HEAD
             <Route path="/duzenleme-kurulu" element={<DuzenlemeKurulu/>} />
             <Route path="/basvuru-sartlari" element={<BasvuruSartlari/>} />
             <Route path="/basvuru-formu" element={<BasvuruFormu/>} />
+=======
+            <Route path="/basvuru-sartlari" element={<BasvuruSartlari/>} />
+>>>>>>> c83c54f (Commit mesajınız)
             <Route path="/basvuru-sonuclari" element={<BasvuruSonuclari/>} />
             <Route path="/oduller" element={<Oduller/>} />
             <Route path="/iletisim" element={<Contact/>} />
