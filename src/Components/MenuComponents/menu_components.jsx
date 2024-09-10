@@ -16,7 +16,7 @@ const MenuComponents = () => {
           <div className="card-body">
             <i class="fa-solid fa-circle-info"></i>
           </div>
-          <div className="card-footer"> <h6>Yyyarışmaa Hakkında</h6></div>
+          <div className="card-footer"> <h6>Yarışma Hakkında</h6></div>
         </div>
 
         <div className="card">
