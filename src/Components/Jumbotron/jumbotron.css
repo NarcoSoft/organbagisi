@@ -67,13 +67,9 @@
 
 .app_date {
   font-style: italic;
-<<<<<<< HEAD
   font-weight: 600;
 }
 
 .app_date p {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Siyah gölge */
-=======
-  color: #fff
->>>>>>> c83c54f (Commit mesajınız)
 }
