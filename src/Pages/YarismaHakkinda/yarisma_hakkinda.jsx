@@ -1,6 +1,14 @@
 import './yarisma_hakkinda.css'
+import { setSheetState } from '../../Store/Slices/sheetSlice';
+import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
 
 const YarismaHakkinda = () => {
+  const dispatch = useDispatch()
+  useEffect(() => {
+    dispatch(setSheetState('yarisma-hakkinda'))
+  },[setSheetState])
+
   return (
     <div className="container my-5 yarisma_hakkinda">
       <h1 className='mb-4'>Genel Bilgi</h1>

@@ -1,7 +1,14 @@
 import { Link } from 'react-router-dom';
 import './basvuru_formu.css'
+import { setSheetState } from '../../Store/Slices/sheetSlice';
+import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
 
 const BasvuruFormu = () => {
+  const dispatch = useDispatch()
+  useEffect(() => {
+    dispatch(setSheetState('basvuru-formu'))
+  },[setSheetState])
   return(
     <div className="form-body">
       <div className="container">

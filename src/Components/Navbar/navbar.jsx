@@ -1,11 +1,14 @@
 import './navbar.css'
 import { useNavigate } from "react-router-dom";
+import { useSelector } from 'react-redux';
 
 const Navbar = () => {
   const navigate = useNavigate();
+  const sheetState = useSelector((state) => state.sheet)
   const handleClick = (route) => {
     navigate(route);
   };
+  
   return (
     <nav className="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
       <div className="container-fluid">
@@ -26,42 +29,42 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto ms-lg-auto mb-2 mb-lg-0">
             <li className="nav-item mx-lg-3">
-              <a className="nav-link active" aria-current="page" onClick={() => handleClick('/')}>
+              <a className={`nav-link ${sheetState==='home' ? 'active' : ''}`} aria-current="page" onClick={() => handleClick('/')}>
                 Anasayfa
               </a>
             </li>
             <li className="nav-item mx-lg-3">
-              <a className="nav-link" onClick={() => handleClick('/yarisma-hakkinda')}>
+              <a className={`nav-link ${sheetState==='yarisma-hakkinda' ? 'active' : ''}`} onClick={() => handleClick('/yarisma-hakkinda')}>
                 Yarışma Hakkında
               </a>
             </li>
             <li className="nav-item mx-lg-3">
-              <a className="nav-link" onClick={() => handleClick('/duzenleme-kurulu')}>
+              <a className={`nav-link ${sheetState==='duzenleme-kurulu' ? 'active' : ''}`} onClick={() => handleClick('/duzenleme-kurulu')}>
                 Düzenleme Kurulu
               </a>
             </li>
             <li className="nav-item mx-lg-3">
-              <a className="nav-link" onClick={() => handleClick('/basvuru-sartlari')}>
+              <a className={`nav-link ${sheetState==='basvuru-sartlari' ? 'active' : ''}`} onClick={() => handleClick('/basvuru-sartlari')}>
                 Başvuru Şartları
               </a>
             </li>
             <li className="nav-item mx-lg-3">
-              <a className="nav-link" onClick={() => handleClick('/basvuru-formu')}>
+              <a className={`nav-link ${sheetState==='basvuru-formu' ? 'active' : ''}`} onClick={() => handleClick('/basvuru-formu')}>
                 Başvuru Yap
               </a>
             </li>
             <li className="nav-item mx-lg-3">
-              <a className="nav-link" onClick={() => handleClick('/basvuru-sonuclari')}>
+              <a className={`nav-link ${sheetState==='basvuru-sonuclari' ? 'active' : ''}`} onClick={() => handleClick('/basvuru-sonuclari')}>
                 Yarışma Sonuçları
               </a>
             </li>
             <li className="nav-item mx-lg-3">
-              <a className="nav-link" onClick={() => handleClick('/oduller')}>
+              <a className={`nav-link ${sheetState==='oduller' ? 'active' : ''}`} onClick={() => handleClick('/oduller')}>
                 Ödüller
               </a>
             </li>
             <li className="nav-item mx-lg-3">
-              <a className="nav-link" onClick={() => handleClick('/iletisim')}>
+              <a className={`nav-link ${sheetState==='iletisim' ? 'active' : ''}`} onClick={() => handleClick('/iletisim')}>
                 İletişim
               </a>
             </li>

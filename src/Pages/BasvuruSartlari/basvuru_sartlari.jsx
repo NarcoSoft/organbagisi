@@ -1,4 +1,12 @@
+import { setSheetState } from '../../Store/Slices/sheetSlice';
+import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
+
 const BasvuruSartlari = () => {
+  const dispatch = useDispatch()
+  useEffect(() => {
+    dispatch(setSheetState('basvuru-sartlari'))
+  },[setSheetState])
   return(
     <div className="container my-5">
       <h1 className="mb-3">Yarışmaya Katılım Şartları</h1>
