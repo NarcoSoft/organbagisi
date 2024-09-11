@@ -15,31 +15,31 @@ const Footer = () => {
           <div className="container">
             <section className="">
               <div className="row text-center d-flex justify-content-center pt-5">
-                <div className="col-md-2">
+                <div className="col-md-2 mb-2 mb-lg-0 mt-3 mt-lg-0">
                   <h6 className="text-uppercase font-weight-bold">
-                    <a className="text-white mb-2 mb-lg-0" onClick={() => {handleClick('/')}}>Anasayfa</a>
+                    <a className="text-white" onClick={() => {handleClick('/')}}>Anasayfa</a>
                   </h6>
                 </div>
 
-                <div className="col-md-2">
+                <div className="col-md-2 mb-2 mb-lg-0 mt-3 mt-lg-0">
                   <h6 className="text-uppercase font-weight-bold">
-                    <a className="text-white mb-2 mb-lg-0" onClick={() => {handleClick('/yarisma-hakkinda')}}>Yarışma Hakkında</a>
+                    <a className="text-white" onClick={() => {handleClick('/yarisma-hakkinda')}}>Yarışma Hakkında</a>
                   </h6>
                 </div>
 
-                <div className="col-md-2">
+                <div className="col-md-2 mb-2 mb-lg-0 mt-3 mt-lg-0">
                   <h6 className="text-uppercase font-weight-bold">
                     <a className="text-white" onClick={() => {handleClick('/basvuru-formu')}}>Başvurular</a>
                   </h6>
                 </div>
 
-                <div className="col-md-2">
+                <div className="col-md-2 mb-2 mb-lg-0 mt-3 mt-lg-0">
                   <h6 className="text-uppercase font-weight-bold">
                     <a className="text-white" onClick={() => {handleClick('/oduller')}}>Ödül Törenİ</a>
                   </h6>
                 </div>
 
-                <div className="col-md-2">
+                <div className="col-md-2 mt-3 mt-lg-0">
                   <h6 className="text-uppercase font-weight-bold">
                     <a className="text-white" onClick={() => {handleClick('/iletisim')}}>İletİşİm</a>
                   </h6>
