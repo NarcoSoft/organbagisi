@@ -46,7 +46,7 @@ const Navbar = () => {
               </a>
             </li>
             <li className="nav-item mx-lg-3">
-              <a className="nav-link" href='https://forms.gle/GjQjTBpPxGFkQ89y9'>
+              <a className="nav-link" onClick={() => handleClick('/basvuru-formu')}>
                 Başvuru Yap
               </a>
             </li>

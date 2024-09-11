@@ -1,7 +1,13 @@
 import React from 'react'
 import './footer.css'
+import { useNavigate } from 'react-router-dom'
 
 const Footer = () => {
+  const navigate = useNavigate()
+  const handleClick = (route) => {
+    navigate(route)
+  }
+
   return( 
     <div className='footer'>
       <div className="">
@@ -11,31 +17,31 @@ const Footer = () => {
               <div className="row text-center d-flex justify-content-center pt-5">
                 <div className="col-md-2">
                   <h6 className="text-uppercase font-weight-bold">
-                    <a href="#!" className="text-white">Organ Bağışı</a>
+                    <a className="text-white mb-2 mb-lg-0" onClick={() => {handleClick('/')}}>Anasayfa</a>
                   </h6>
                 </div>
 
                 <div className="col-md-2">
                   <h6 className="text-uppercase font-weight-bold">
-                    <a href="#!" className="text-white">Yarışma Hakkında</a>
+                    <a className="text-white mb-2 mb-lg-0" onClick={() => {handleClick('/yarisma-hakkinda')}}>Yarışma Hakkında</a>
                   </h6>
                 </div>
 
                 <div className="col-md-2">
                   <h6 className="text-uppercase font-weight-bold">
-                    <a href="#!" className="text-white">Başvurular</a>
+                    <a className="text-white" onClick={() => {handleClick('/basvuru-formu')}}>Başvurular</a>
                   </h6>
                 </div>
 
                 <div className="col-md-2">
                   <h6 className="text-uppercase font-weight-bold">
-                    <a href="#!" className="text-white">Ödül Törenİ</a>
+                    <a className="text-white" onClick={() => {handleClick('/oduller')}}>Ödül Törenİ</a>
                   </h6>
                 </div>
 
                 <div className="col-md-2">
                   <h6 className="text-uppercase font-weight-bold">
-                    <a href="#!" className="text-white">İletİşİm</a>
+                    <a className="text-white" onClick={() => {handleClick('/iletisim')}}>İletİşİm</a>
                   </h6>
                 </div>
 
