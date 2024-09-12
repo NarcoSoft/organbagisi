@@ -14,8 +14,23 @@ const BasvuruFormu = () => {
     <div className="form-body">
       <div className="container">
         <div className="d-flex">
-          <iframe className="d-flex mx-auto my-4" src="https://docs.google.com/forms/d/e/1FAIpQLScJsjodL6-oKPgIO7iLj2GmR1CUP-oT9gBIe2eAOspnq612Fw/viewform?embedded=true" width="640" height="520" frameborder="0">Yükleniyor…</iframe>
           
+    <iframe
+      id="JotFormIFrame-242552995659070"
+      title="Başvuru Formu"
+      onload="window.parent.scrollTo(0,0)"
+      allowtransparency="true"
+      allow="geolocation; microphone; camera; fullscreen"
+      src="https://form.jotform.com/242552995659070"
+      frameborder="0"
+      scrolling="yes"
+      style={{minWidth: '100%', maxWidth: '100%', height: '539px', border: 'none'}}
+      className='my-4'
+    >
+    </iframe>
+    <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
+    <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-242552995659070']", "https://form.jotform.com/")</script>
+    
         </div>
         <div className='d-flex'>
           <Link className=' mx-auto mb-2' to={'/'}><button className='btn btn-primary'>Anasayfa'ya Dön</button></Link>
