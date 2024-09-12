@@ -54,7 +54,7 @@ const Navbar = () => {
               </a>
             </li>
             <li className="nav-item mx-lg-3">
-              <a className={`nav-link ${sheetState==='basvuru-sonuclari' ? 'active' : ''}`} onClick={() => handleClick('/basvuru-sonuclari')}>
+              <a className={`nav-link ${sheetState==='basvuru-sonuclari' ? 'active' : ''}`} onClick={() => handleClick('/yarisma-sonuclari')}>
                 Yarışma Sonuçları
               </a>
             </li>

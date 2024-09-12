@@ -7,6 +7,7 @@ const YarismaHakkinda = () => {
   const dispatch = useDispatch()
   useEffect(() => {
     dispatch(setSheetState('yarisma-hakkinda'))
+    window.scrollTo(0,0)
   },[setSheetState])
 
   return (

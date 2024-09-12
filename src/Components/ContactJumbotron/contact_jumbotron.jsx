@@ -6,28 +6,23 @@ const ContactJumbotron = () => {
       <div className="contact_jumbotron">
         <div className="contact_content w-100">
           <div className="row w-100">
-            <div className="col-md-4 text-center text-dark mb-3">
+            <div className="col-lg-4 text-center text-dark mb-3">
               <h2 className="mb-3">Başvurular</h2>
-              <p>Organ Bağışı İle Umut Ol</p>
-              <p>26 Ekim - 26 Kasım Arası</p>
+              <p>Konu: Organ Bağışı İle Umut Ol</p>
+              <p>Tarih: 26 Eylül - 26 Ekim Arası</p>
               <p>Tüm Konya Şehir Hastanesi Personelleri</p>
-              <p>2 Adet Slogan</p>
-              <p>organbagisi.anestezietkinlik.com üzerinden katıl</p>
             </div>
-            <div className="col-md-4 text-center text-dark mb-3">
+            <div className="col-lg-4 text-center text-dark mb-3">
               <h2 className="mb-3">Sonuçlar</h2>
-              <p>1 Kasım 2024 tarihinde</p>
-              <p>'Başvuru Sonuçları' Sekmesinden Takip Et</p>
-              <p>Ödül Töreni 3-9 Kasım Arası</p>
-              <p>Konya Şehir Hastanesi / Konferans Salonu</p>
+              <p>Açıklanma: 1 Kasım 2024 tarihinde</p>
+              <p>Tarih: Ödül Töreni 3-9 Kasım Arası</p>
+              <p>Yer: Konya Şehir Hastanesi / Konferans Salonu</p>
             </div>
-            <div className="col-md-4 text-center text-dark mb-3">
+            <div className="col-lg-4 text-center text-dark mb-3">
               <h2 className="mb-3">İletişim</h2>
-              <p>Doç. Dr. Mehmet Akif Yazar</p>
-              <p>+90 505 566 57 58</p>
-              <p>example@gmail.com</p>
-              <p>Konya Şehir Hastanesi</p>
-              <p></p>
+              <p>Koordinatör: Doç. Dr. Mehmet Akif Yazar</p>
+              <p>Telefon: +90 505 566 57 58</p>
+              <p>E-posta: makifyazar@hotmail.com</p>
             </div>
           </div>
         </div>

@@ -8,6 +8,7 @@ const BasvuruFormu = () => {
   const dispatch = useDispatch()
   useEffect(() => {
     dispatch(setSheetState('basvuru-formu'))
+    window.scrollTo(0,0)
   },[setSheetState])
   return(
     <div className="form-body">

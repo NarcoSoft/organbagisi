@@ -8,12 +8,14 @@ import Home from './Pages/Home/home';
 import YarismaHakkinda from './Pages/YarismaHakkinda/yarisma_hakkinda';
 import BasvuruSartlari from './Pages/BasvuruSartlari/basvuru_sartlari';
 import BasvuruFormu from './Pages/BasvuruFormu/basvuru_formu';
-import BasvuruSonuclari from './Pages/BasvuruSonuclari/basvuru_sonuclari'
+import YarismaSonuclari from './Pages/YarismaSonuclari/yarisma_sonuclari'
 import Oduller from './Pages/Oduller/oduller';
 import Contact from './Pages/Contact/contact';
 import DuzenlemeKurulu from './Pages/DuzenlemeKurulu/duzenleme_kurulu';
+import { useEffect } from 'react';
 
 export default function App() {
+  
   return (
     <main>
       <div className='app_container'>
@@ -25,7 +27,7 @@ export default function App() {
             <Route path="/duzenleme-kurulu" element={<DuzenlemeKurulu/>} />
             <Route path="/basvuru-sartlari" element={<BasvuruSartlari/>} />
             <Route path="/basvuru-formu" element={<BasvuruFormu/>} />
-            <Route path="/basvuru-sonuclari" element={<BasvuruSonuclari/>} />
+            <Route path="/yarisma-sonuclari" element={<YarismaSonuclari/>} />
             <Route path="/oduller" element={<Oduller/>} />
             <Route path="/iletisim" element={<Contact/>} />
           </Routes>

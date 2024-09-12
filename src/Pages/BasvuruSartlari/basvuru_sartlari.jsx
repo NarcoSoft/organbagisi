@@ -6,6 +6,7 @@ const BasvuruSartlari = () => {
   const dispatch = useDispatch()
   useEffect(() => {
     dispatch(setSheetState('basvuru-sartlari'))
+    window.scrollTo(0,0)
   },[setSheetState])
   return(
     <div className="container my-5">

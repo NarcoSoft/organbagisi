@@ -40,7 +40,7 @@ const MenuComponents = () => {
           <div className="card-footer"> <h6>Başvuru Yap</h6></div>
         </div>       
 
-        <div className="card" onClick={() => handleClick('basvuru-sonuclari')}>
+        <div className="card" onClick={() => handleClick('yarisma-sonuclari')}>
           <div className="card-body">
             <i class="fa-solid fa-bullhorn"></i>
           </div>

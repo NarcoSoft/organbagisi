@@ -6,6 +6,7 @@ const DuzenlemeKurulu = () => {
   const dispatch = useDispatch()
   useEffect(() => {
     dispatch(setSheetState('duzenleme-kurulu'))
+    window.scrollTo(0,0)
   },[setSheetState])
   return (
     <div className="container my-5 duzenleme_kurulu">

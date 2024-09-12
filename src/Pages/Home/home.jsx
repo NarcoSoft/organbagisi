@@ -8,6 +8,7 @@ const Home = () => {
   const dispatch = useDispatch()
   useEffect(() => {
     dispatch(setSheetState('home'))
+    window.scrollTo(0,0)
   },[setSheetState])
   return(
     <>

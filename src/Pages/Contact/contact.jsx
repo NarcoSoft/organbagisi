@@ -7,6 +7,7 @@ const Contact = () => {
   const dispatch = useDispatch()
   useEffect(() => {
     dispatch(setSheetState('iletisim'))
+    window.scrollTo(0,0)
   },[setSheetState])
   return(
     <div className=''>

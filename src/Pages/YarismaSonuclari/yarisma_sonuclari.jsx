@@ -2,14 +2,15 @@ import { setSheetState } from '../../Store/Slices/sheetSlice';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 
-const BasvuruSonuclari = () => {
+const YarismaSonuclari = () => {
   const dispatch = useDispatch()
   useEffect(() => {
-    dispatch(setSheetState('basvuru-sonuclari'))
+    dispatch(setSheetState('yarisma-sonuclari'))
+    window.scrollTo(0,0)
   },[setSheetState])
   return(
     <div className="container my-5">
-      <h1>Başvuru Sonuçları</h1>
+      <h1>Yarışma Sonuçları</h1>
       <div className="d-flex mt-5">
         <h4 className="d-flex mx-auto">Başvurular henüz başlamamıştır. </h4>
       </div>
@@ -20,4 +21,4 @@ const BasvuruSonuclari = () => {
   )
 }
 
-export default BasvuruSonuclari;
+export default YarismaSonuclari;
