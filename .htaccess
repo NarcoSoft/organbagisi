@@ -1,0 +1,83 @@
+RewriteRule "^.well-known/" - [L]
+
+SetEnvIf User-Agent "badbot" bad_bot
+SetEnvIf User-Agent "anotherbadbot" bad_bot
+Order Allow,Deny
+Allow from all
+Deny from env=bad_bot
+
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
+
+Options -Indexes
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE text/javascript
+  AddOutputFilterByType DEFLATE text/xml
+  AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE text/svg+xml
+  AddOutputFilterByType DEFLATE application/xhtml+xml
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE application/rss+xml
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/x-javascript
+  AddOutputFilterByType DEFLATE application/json
+  AddOutputFilterByType DEFLATE application/ld+json
+  AddOutputFilterByType DEFLATE application/xhtml+xml
+  AddOutputFilterByType DEFLATE application/font-woff
+  AddOutputFilterByType DEFLATE application/font-woff2
+  AddOutputFilterByType DEFLATE application/x-font-opentype
+  AddOutputFilterByType DEFLATE application/x-font-truetype
+  AddOutputFilterByType DEFLATE application/x-font-otf
+  AddOutputFilterByType DEFLATE application/x-font-ttf
+  AddOutputFilterByType DEFLATE application/rtf
+  AddOutputFilterByType DEFLATE font/ttf
+  AddOutputFilterByType DEFLATE font/otf
+  AddOutputFilterByType DEFLATE font-woff
+  AddOutputFilterByType DEFLATE font-woff2
+  AddOutputFilterByType DEFLATE image/x-icon
+</IfModule>
+
+<RequireAll>
+  Require all granted
+  Require not ip 159.89.32.0/24
+  Require not ip 159.89.0.0/24
+  Require not ip 170.64.237.244
+  Require not ip 34.124.192.99
+  Require not ip 34.145.144.12
+  Require not ip 146.190.97.1
+  Require not ip 159.223.33.125
+  Require not ip 188.166.178.218
+  Require not ip 80.255.12.229
+  Require not ip 123.58.209.246
+  Require not ip 146.190.116.222
+  Require not ip 20.213.21.81
+  Require not ip 20.117.187.50
+  Require not ip 159.223.46.180
+  Require not ip 101.36.109.54
+  Require not ip 159.89.12.166
+  Require not ip 143.110.182.61
+  Require not ip 13.229.239.179
+  Require not ip 167.99.72.112
+  Require not ip 34.174.95.251
+  Require not ip 58.211.23.183
+  Require not ip 152.42.190.40
+  Require not ip 152.42.161.1
+  Require not ip 35.237.17.22
+  Require not ip 156.146.56.136
+  Require not ip 35.236.16.226
+  Require not ip 35.236.16.226
+  Require not ip 34.168.142.57
+  Require not ip 170.64.132.42
+  Require not ip 128.90.157.11
+  Require not ip 170.64.148.18
+  Require not ip 34.174.2.41
+  Require not ip 64.23.174.68
+  Require not ip 34.86.32.155
+</RequireAll>

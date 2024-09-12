@@ -1,0 +1,26 @@
+# Narcode Software | robots.txt
+
+User-agent: 008
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: NerdyBot
+Disallow: /
+
+User-agent: WBSearchBot
+Disallow: /
+
+
+User-agent: *
+Crawl-delay: 20
+
+User-agent: Googlebot
+Disallow: 
+
+# Sitemap
+Sitemap: https://www.anestezietkinlik.com/sitemap.xml
