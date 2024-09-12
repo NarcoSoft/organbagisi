@@ -3,3 +3,8 @@
     cursor: pointer;
     font-family: "Montserrat", sans-serif;
 }
+
+.site-slogan {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+}

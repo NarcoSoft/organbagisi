@@ -53,8 +53,8 @@ const Footer = () => {
             <section className="mb-5">
               <div className="row d-flex justify-content-center">
                 <div className="col-lg-8">
-                  <p>
-                    Her gün yeni bir umutla hayata gözlerini açan yüreklere; sen de denizinden bir damla, güneşinden bir ışık bağışla. 
+                  <p className='site-slogan'>
+                    Her gün yenİ bİr umutla hayata gözlerİnİ açan yüreklere; sen de denİzİnden bİr damla, güneşİnden bİr ışık bağışla
                   </p>
                 </div>
               </div>
