@@ -1,7 +1,7 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Form } from 'react-router-dom';
 import Navbar from './Components/Navbar/navbar'
 import Footer from './Components/Footer/footer'
 import Home from './Pages/Home/home';
@@ -12,7 +12,6 @@ import YarismaSonuclari from './Pages/YarismaSonuclari/yarisma_sonuclari'
 import Oduller from './Pages/Oduller/oduller';
 import Contact from './Pages/Contact/contact';
 import DuzenlemeKurulu from './Pages/DuzenlemeKurulu/duzenleme_kurulu';
-import { useEffect } from 'react';
 
 export default function App() {
   
