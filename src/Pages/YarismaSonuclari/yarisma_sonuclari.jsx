@@ -1,6 +1,7 @@
 import { setSheetState } from '../../Store/Slices/sheetSlice';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
+import './yarisma_sonuclari.css'
 
 const YarismaSonuclari = () => {
   const dispatch = useDispatch()
@@ -12,10 +13,11 @@ const YarismaSonuclari = () => {
     <div className="container my-5">
       <h1>Yarışma Sonuçları</h1>
       <div className="d-flex mt-5">
-        <h4 className="d-flex mx-auto">Başvurular henüz başlamamıştır. </h4>
+        <h4 className="d-flex mx-auto"></h4>
       </div>
-      <div className="d-flex my-2">
-        <p className="d-flex mx-auto">Başvurular 26 Eylül - 26 Ekim 2024 tarihleri arasında yapılacak olup yarışma sonuçları 1 Kasım'da sitemizden duyurulacaktır.</p>
+      <div className="d-flex my-2 info">
+        <div className="d-flex mx-auto info-header"> Yarışma sonuçları 1 Kasım 2024 tarihinde sitemizden duyurulacaktır.</div>
+        <p className='d-flex mt-5 justify-content-center'>Ayrıca sonuçlar katılımcılara e-mail olarak gönderilecektir. </p>
       </div>
     </div>
   )

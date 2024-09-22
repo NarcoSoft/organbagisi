@@ -11,6 +11,14 @@ const Oduller = () => {
   return(
     <div className="container my-5">
       <h1 className="mb-4">Ödüller</h1>
+      <div>
+        <ul>
+          <li>Birinciye Kaft Marka Sırt Çantası </li>
+          <li>İkinciye Stanley Marka Termos</li>
+          <li>Üçüncüye JBL marka headphone 560 bt wireless kulaklık</li>
+          <li>İlk 50 kişiye Mansiyon ödülü: Seramik kupa</li>
+        </ul>
+      </div>
       <p><strong>Ödül Tören Tarihi:</strong> 3-9 Kasım 2024 Organ Bağışı Haftası içerisinde yapılacaktır. </p>
       <p><strong>Yer:</strong> Konya Şehir Hastanesi / Konferans Salonu</p>
       <h2 className="mt-5">Ödül Töreni Programı</h2>

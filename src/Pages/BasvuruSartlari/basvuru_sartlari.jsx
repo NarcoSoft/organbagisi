@@ -1,6 +1,7 @@
 import { setSheetState } from '../../Store/Slices/sheetSlice';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
+import './basvuru_sartlari.css'
 
 const BasvuruSartlari = () => {
   const dispatch = useDispatch()
@@ -11,13 +12,13 @@ const BasvuruSartlari = () => {
   return(
     <div className="container my-5">
       <h1 className="mb-3">Yarışmaya Katılım Şartları</h1>
-      <div>
+      <div className='katilim-sart-ul'>
         <ul>
           <li>
-            Yarışmanın konusu “Organ Bağışı” dır.
+            Yarışmanın konusu <strong>“Organ Bağışı”</strong> dır.
           </li>
           <li>
-            Yarışmaya sadece Konya Şehir Hastanesinde görev yapan tüm sağlık personeli, hastane destek elemanlarını içeren tüm personel ve bu personellerin 2024-2025 öğretim yılı itibariyle lise bölümüne giden çocukları katılabilecektir.
+            Yarışmaya sadece Konya Şehir Hastanesinde görev yapan <strong>tüm sağlık personeli</strong>, hastane destek elemanlarını içeren <strong>tüm personel</strong> ve bu personellerin 2024-2025 öğretim yılı itibariyle sadece <strong>lise bölümüne giden çocukları</strong> katılabilecektir.
           </li>
           <li>
             Yarışmaya katılım ücretsizdir.
@@ -26,10 +27,10 @@ const BasvuruSartlari = () => {
             Hastanede görev yapan tüm personel kapsamına; hekim, hemşire, ebe, eczacı, sağlık memuru, anestezi teknikeri, diğer sağlık teknisyenleri ve teknikerleri, fizyoterapist, odyolog, diyetisyen, sekreter, yardımcı sağlık personeli, anlaşmalı şirketlere ait güvenlik görevlisi, taşıma, yönlendirme gibi tüm destek hizmetlerini sağlayan ve hastanede resmi olarak görev yapan tüm personel girmektedir.
           </li>
           <li>
-            Yarışmaya katılacak sloganlar orijinal nitelikte olmalıdır. Daha önce başka bir yarışmada sunulan, başka bir yerde yayınlanan veya başka birine ait olduğu tespit edilen sloganlar, seçici kurul tarafından yarışma dışı kalacaktır.
+            Yarışmaya katılacak sloganlar <strong>orijinal</strong> nitelikte olmalıdır. Daha önce başka bir yarışmada sunulan, başka bir yerde yayınlanan veya başka birine ait olduğu tespit edilen sloganlar, seçici kurul tarafından yarışma dışı kalacaktır.
           </li>
           <li>
-            Yarışmaya bir kişi en fazla 2 (iki) slogan ile katılabilir.
+            Yarışmaya bir kişi <strong>en fazla 2 (iki)</strong> slogan ile katılabilir.
           </li>
           <li>
             Yarışmaya; seçici kurul üyeleri ve organ nakil koordinatörleri, idari personelden başhekim ve yardımcıları, idari ve mali hizmetler müdürleri ve yardımcıları, destek ve kalite hizmetleri müdürü ve yardımcıları, sağlık bakım hizmetleri müdürü ve yardımcıları ve bu kişilerin çocukları yarışmaya katılamazlar.
@@ -47,7 +48,7 @@ const BasvuruSartlari = () => {
             Başvurular sadece <strong>'organbagisi.anestezietkinlik.com'</strong> internet sayfası üzerinden yapılacaktır. 
           </li>         
           <li>
-            Slogan ifadesi 'Başvuru Yap' bölümünde bulunan başvuru formundaki 'Slogan' kısmına yazılarak form onaylanacaktır. Sistem otomatik olarak sloganı kaydedecektir.
+            Slogan ifadesi 'Başvuru Yap' bölümünde bulunan başvuru formundaki 'Slogan' kısmına yazılarak formun onaylanması gerekmektedir. Sistem otomatik olarak sloganı kaydedecektir.
           </li>
         </ul>
       </div>
