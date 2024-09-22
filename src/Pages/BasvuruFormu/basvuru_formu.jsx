@@ -15,7 +15,7 @@ const BasvuruFormu = () => {
       <div className="container">
         <div className="d-flex">
           
-        <iframe className='mx-auto my-3' src="https://docs.google.com/forms/d/e/1FAIpQLScJsjodL6-oKPgIO7iLj2GmR1CUP-oT9gBIe2eAOspnq612Fw/viewform?embedded=true" width="680" height="560" frameborder="0" marginheight="0" marginwidth="0">Yükleniyor…</iframe>
+        <iframe className='mx-auto my-3 form-frame' src="https://docs.google.com/forms/d/e/1FAIpQLScJsjodL6-oKPgIO7iLj2GmR1CUP-oT9gBIe2eAOspnq612Fw/viewform?embedded=true" width="100%" height="560" frameborder="0" marginheight="10" marginwidth="10">Yükleniyor…</iframe>
     
         </div>
         <div className='d-flex'>
