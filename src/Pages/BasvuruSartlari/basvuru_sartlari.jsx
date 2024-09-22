@@ -42,12 +42,12 @@ const BasvuruSartlari = () => {
       <h1 className="mt-5 mb-3">Yarışmaya Katılacak Sloganlarda Aranacak Şartlar</h1>
       <div>
         <ul>
-          <li>Slogan; organ bağışı ile ilgili olmalı ve <strong>en fazla 6 kelimeden</strong> oluşmalıdır.</li>
+          <li>Slogan; organ bağışı ile ilgili, kısa akılda kalıcı ve etkili bir ifade olmalı ve <strong>en fazla 6 kelimeden</strong> oluşmalıdır.</li>
           <li>
             Başvurular sadece <strong>'organbagisi.anestezietkinlik.com'</strong> internet sayfası üzerinden yapılacaktır. 
           </li>         
           <li>
-            Başvuru formunda bulunan slogan kısmı doldurularak form onaylanacaktır. Sistem otomatik olarak sloganı kaydedecektir.
+            Slogan ifadesi 'Başvuru Yap' bölümünde bulunan başvuru formundaki 'Slogan' kısmına yazılarak form onaylanacaktır. Sistem otomatik olarak sloganı kaydedecektir.
           </li>
         </ul>
       </div>
