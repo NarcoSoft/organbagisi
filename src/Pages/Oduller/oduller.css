@@ -1,0 +1,48 @@
+.card_od {
+  border-radius: 50%;  
+  margin: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 282px;
+  border: 16px solid;
+  border-color: rgb(79, 171, 174);
+  margin-top: 40px;
+  
+}
+
+.card_od img {
+  border-radius: 50%;
+}
+
+.number_box {
+    position: absolute;
+    font-size: 40px;
+    font-weight: 700;
+    border: 6px solid orange;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+    margin-top: -30px;
+    margin-left: 30px;
+    background-color: brown;
+    color: white;
+}
+
+.text_box_1 {
+    margin-top: 60px;
+    font-size: 28px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+}
+
+.text_box_2 {
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    color: yellowgreen;
+}
