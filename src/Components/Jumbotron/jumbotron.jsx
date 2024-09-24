@@ -12,7 +12,7 @@ const Jumbotron = () => {
                 <MenuComponents />
               </div>
               <div className="display-6 mt-4 justify-content-center justify-content-lg-end app_date">
-                <p>Son Başvuru Tarihi: </p> 
+                <p>Son Başvuru Tarihi </p> 
                 <p>26 Ekim 2024</p>
               </div>
             </div>
