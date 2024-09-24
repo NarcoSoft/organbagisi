@@ -1,3 +1,19 @@
 .nav-link {
   cursor: pointer;
 }
+
+.navbar-nav {
+  font-size: 1rem;
+}
+
+@media (min-width: 1087px) and (max-width: 1160px) {
+  .navbar-nav {
+    font-size: .9rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1087px) {
+  .navbar-nav {
+    font-size: .75rem;
+  }
+}
