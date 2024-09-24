@@ -15,7 +15,7 @@ const YarismaHakkinda = () => {
       <h1 className='mb-4'>Genel Bilgi</h1>
       <div>
         <p>
-           Hastanemizde organ bağışı konusunda farkındalığın artırılması için hastane personeline ve çocuklarına yönelik Konya Şehir Hastanesi Organ ve Doku Nakli Koordinatörlüğü tarafından bir slogan yarışması gerçekleştirilmesi planlanmıştır.
+           Hastanemizde organ bağışı konusunda farkındalığın artırılması için hastane çalışanlarına ve çocuklarına yönelik Konya Şehir Hastanesi Organ ve Doku Nakli Koordinatörlüğü tarafından düzenlenen bir slogan yarışması gerçekleştirilmesi planlanmıştır. Katılım ücretsiz olup yarışmada derece alanlara ödüller verilecektir.
         </p>
       
       </div>

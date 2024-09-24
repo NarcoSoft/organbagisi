@@ -3,7 +3,7 @@ import './odul.css'
 const Odul = () => {
     return(
         <>
-            <div className='my-5'>
+            <div className='my-5 mx-3'>
                 <div className='row'>
                 <div className='col-lg-4'>
                     <div className='card_od mx-auto'>

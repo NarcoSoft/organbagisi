@@ -18,7 +18,7 @@ const BasvuruSartlari = () => {
             Yarışmanın konusu <strong>“Organ Bağışı”</strong> dır.
           </li>
           <li>
-            Yarışmaya sadece Konya Şehir Hastanesinde görev yapan <strong>tüm sağlık personeli</strong>, hastane destek elemanlarını içeren <strong>tüm personel</strong> ve bu personellerin 2024-2025 öğretim yılı itibariyle sadece <strong>lise bölümüne giden çocukları</strong> katılabilecektir.
+            Yarışmaya sadece Konya Şehir Hastanesinde görev yapan <strong>tüm sağlık personeli</strong>, hastane destek elemanlarını içeren <strong>tüm personel</strong> ve bu personellerin 2024-2025 öğretim yılı itibariyle sadece <strong>lise öğrenimi gören çocukları</strong> katılabilecektir.
           </li>
           <li>
             Yarışmaya katılım ücretsizdir.
@@ -42,7 +42,7 @@ const BasvuruSartlari = () => {
       </div>  
       <h1 className="mt-5 mb-3">Yarışmaya Katılacak Sloganlarda Aranacak Şartlar</h1>
       <div>
-        <ul>
+        <ol>
           <li>Slogan; organ bağışı ile ilgili, kısa akılda kalıcı ve etkili bir ifade olmalı ve <strong>en fazla 6 kelimeden</strong> oluşmalıdır.</li>
           <li>
             Başvurular sadece <strong>'organbagisi.anestezietkinlik.com'</strong> internet sayfası üzerinden yapılacaktır. 
@@ -50,7 +50,7 @@ const BasvuruSartlari = () => {
           <li>
             Slogan ifadesi 'Başvuru Yap' bölümünde bulunan başvuru formundaki 'Slogan' kısmına yazılarak formun onaylanması gerekmektedir. Sistem otomatik olarak sloganı kaydedecektir.
           </li>
-        </ul>
+        </ol>
       </div>
     </div>
   )
