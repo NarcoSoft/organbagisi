@@ -60,9 +60,7 @@ const Footer = () => {
               </div>
             </section>
 
-            <section className="text-center mb-5">
-              
-              
+            <section className="text-center mb-5">  
               <a href="https://instagram.com/organ_nakli_ksh" className="text-white me-4">
                 <i className="fab fa-instagram"></i>
               </a>
