@@ -29,7 +29,7 @@ const Footer = () => {
 
                 <div className="col-md-2 mb-2 mb-lg-0 mt-3 mt-lg-0">
                   <h6 className="text-uppercase font-weight-bold">
-                    <a className="text-white" onClick={() => {handleClick('/basvuru-formu')}}>Başvurular</a>
+                    <a className="text-white" onClick={() => {handleClick('/basvuru-formu')}}>Başvuru Yap</a>
                   </h6>
                 </div>
 
