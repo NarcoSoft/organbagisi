@@ -61,6 +61,14 @@ const Footer = () => {
             </section>
 
             <section className="text-center mb-5">
+              
+              
+              <a href="https://instagram.com/organ_nakli_ksh" className="text-white me-4">
+                <i className="fab fa-instagram"></i>
+              </a>
+              <a href="" className="text-white me-4">
+                <i className="fab fa-google"></i>
+              </a>
               <a href="" className="text-white me-4">
                 <i className="fab fa-facebook-f"></i>
               </a>
@@ -68,16 +76,7 @@ const Footer = () => {
                 <i className="fab fa-twitter"></i>
               </a>
               <a href="" className="text-white me-4">
-                <i className="fab fa-google"></i>
-              </a>
-              <a href="" className="text-white me-4">
-                <i className="fab fa-instagram"></i>
-              </a>
-              <a href="" className="text-white me-4">
                 <i className="fab fa-linkedin"></i>
-              </a>
-              <a href="" className="text-white me-4">
-                <i className="fab fa-github"></i>
               </a>
             </section>
           </div>
