@@ -18,7 +18,7 @@ const BasvuruSartlari = () => {
             Yarışmanın konusu <strong>“Organ Bağışı”</strong> dır.
           </li>
           <li>
-            Yarışmaya sadece Konya Şehir Hastanesinde görev yapan <strong>tüm sağlık personeli</strong>, hastane destek elemanlarını içeren <strong>tüm personel</strong> ve bu personellerin 2024-2025 öğretim yılı itibariyle sadece <strong>lise öğrenimi gören çocukları</strong> katılabilecektir.
+            Yarışmaya sadece Konya Şehir Hastanesinde görev yapan <strong>tüm sağlık personeli</strong> (hastanede staj gören tüm üniversite ve lise öğrencileri dahil), hastane destek elemanlarını içeren <strong>tüm personel</strong> ve bu personellerin 2024-2025 öğretim yılı itibariyle sadece <strong>lise öğrenimi gören çocukları</strong> katılabilecektir.
           </li>
           <li>
             Yarışmaya katılım ücretsizdir.

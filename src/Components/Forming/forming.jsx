@@ -9,6 +9,7 @@ const Form = () => {
   const [isCodeSent, setIsCodeSent] = useState(false);
   const [loading, setLoading] = useState(false); 
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false); 
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
@@ -24,7 +25,7 @@ const Form = () => {
 
   const sendVerificationCode = () => {
     setLoading(true);
-    fetch('http://localhost/organbagisi/send_verification_code.php', {
+    fetch('https://destek.anestezietkinlik.com/send_verification_code.php', {
       method: 'POST',
       credentials: 'include', // Oturum çerezlerini gönder
       headers: {
@@ -50,10 +51,12 @@ const Form = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
     // Zorunlu alanları kontrol et
     if (!termsAccepted) {
       alert('Lütfen şartları kabul edin.');
+      setIsSubmitting(false);
       return;
     }
     if (!formData.fullName || !formData.email || !formData.phone || !formData.slogan1 || !formData.participantType) {
@@ -62,7 +65,7 @@ const Form = () => {
     }
 
     // Doğrulama kodunu kontrol et
-    fetch('http://localhost/organbagisi/verify_code.php', {
+    fetch('https://destek.anestezietkinlik.com/verify_code.php', {
       method: 'POST',
       credentials: 'include', // Oturum çerezlerini gönder
       headers: {
@@ -74,7 +77,7 @@ const Form = () => {
       .then((data) => {
         if (data.valid) {
           // Form verilerini API'ye gönder
-          fetch('http://localhost/organbagisi/submit_form.php', {
+          fetch('https://destek.anestezietkinlik.com/submit_form.php', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/x-www-form-urlencoded',
@@ -85,6 +88,9 @@ const Form = () => {
             .then((data) => {
               if (data.success) {
                 setIsFormSubmitted(true);
+                setIsSubmitting(false);
+
+                window.scrollTo(0, 0);
                 // Formu temizle
                 setFormData({
                   fullName: '',
@@ -103,13 +109,16 @@ const Form = () => {
                 setVerificationCode(''); // Doğrulama kodunu temizle
               } else {
                 alert('Bir hata oluştu: ' + data.error);
+                setIsSubmitting(false);
               }
             })
             .catch((error) => {
               alert('Bir hata oluştu: ' + error.message);
+              setIsSubmitting(false);
             });
         } else {
           alert('Doğrulama kodu hatalı.');
+          setIsSubmitting(false);
         }
       })
       .catch((error) => {
@@ -191,13 +200,19 @@ const Form = () => {
           <label>
             Göreviniz: <span className="required">*</span>
             <select name="role" value={formData.role} onChange={handleChange} required className="form-select">
-              <option value="">Seçin</option>
-              <option value="Hekim">Hekim</option>
-              <option value="Hemşire">Hemşire</option>
-              <option value="Ebe">Ebe</option>
-              <option value="Fizyoterapist">Fizyoterapist</option>
-              <option value="Odyolog">Odyolog</option>
-            </select>
+                <option value="">Seçin</option>
+                <option value="Hekim">Hekim</option>
+                <option value="Diş Hekimi">Diş Hekimi</option>
+                <option value="Hemşire">Hemşire</option>
+                <option value="Ebe">Ebe</option>
+                <option value="Sağlık Teknikeri/Teknisyeni">Sağlık Teknikeri/Teknisyeni</option>
+                <option value="Eczacı">Eczacı</option>
+                <option value="Sağlık Memuru">Sağlık Memuru</option>
+                <option value="Fizyoterapist/Odyolog/Diyetisyen/Psikolog">Fizyoterapist/Odyolog/Diyetisyen/Psikolog</option>
+                <option value="Sekreter">Sekreter</option>
+                <option value="Diğer anlaşmalı şirket çalışanları">Diğer anlaşmalı şirket çalışanları</option>
+                <option value="Diğer sağlık destek personeli">Diğer sağlık destek personeli</option>
+              </select>
           </label>
         </div>
       )}
@@ -227,10 +242,16 @@ const Form = () => {
               <select name="parentRole" value={formData.parentRole} onChange={handleChange} required className="form-select">
                 <option value="">Seçin</option>
                 <option value="Hekim">Hekim</option>
+                <option value="Diş Hekimi">Diş Hekimi</option>
                 <option value="Hemşire">Hemşire</option>
                 <option value="Ebe">Ebe</option>
-                <option value="Fizyoterapist">Fizyoterapist</option>
-                <option value="Odyolog">Odyolog</option>
+                <option value="Sağlık Teknikeri/Teknisyeni">Sağlık Teknikeri/Teknisyeni</option>
+                <option value="Eczacı">Eczacı</option>
+                <option value="Sağlık Memuru">Sağlık Memuru</option>
+                <option value="Fizyoterapist/Odyolog/Diyetisyen/Psikolog">Fizyoterapist/Odyolog/Diyetisyen/Psikolog</option>
+                <option value="Sekreter">Sekreter</option>
+                <option value="Diğer anlaşmalı şirket çalışanları">Diğer anlaşmalı şirket çalışanları</option>
+                <option value="Diğer sağlık destek personeli">Diğer sağlık destek personeli</option>
               </select>
             </label>
           </div>
@@ -262,9 +283,10 @@ const Form = () => {
       )}
       {isCodeSent ? 
         <div className="form-group">
-          <button type="submit" disabled={!termsAccepted} className="form-button">
+          <button type="submit" disabled={!termsAccepted || isSubmitting} className="form-button">
             Gönder
           </button>
+          {isSubmitting && <p style={{ color: 'blue', fontWeight: '600' }}>Formunuz gönderiliyor...</p>}
         </div> : null
       }
       
@@ -273,3 +295,5 @@ const Form = () => {
 };
 
 export default Form;
+
+

@@ -18,7 +18,7 @@ const BasvuruFormu = () => {
     <div className="form-body">
       <div className="container">
         <div className="d-flex">  
-          <Forming/>      
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfV-r_fMRhguUI1vMUbwz0Eg34sIxrlShuiK5qvCkJcBsffQg/viewform?embedded=true" width="640" height="600" className='mx-auto'>Yükleniyor…</iframe>      
         </div>
         <div className='d-flex'>
           <Link className=' mx-auto my-4' to={'/'}><button className='btn btn-primary'>Anasayfa'ya Dön</button></Link>
